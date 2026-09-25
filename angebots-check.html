@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="de"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+
+<meta name="description" content="Kostenloser Angebots-Check für kleine Umzugs- und Räumungsbetriebe: 10 Fragen zeigen, wo bei der Angebotsbearbeitung Angaben verloren gehen. Ohne Anmeldung, ohne Speicherung.">
+<title>Angebots-Check für Umzugsbetriebe · Vertical SaaS Lab</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<style>
+.q-card{display:none}.q-card.active{display:block}
+.opt{display:flex;align-items:flex-start;gap:10px;margin:10px 0;padding:12px 14px;background:#f6f8fd;border:1px solid #e0e7f0;border-radius:7px;cursor:pointer}
+.opt:hover{border-color:#94a9f4;background:#eef2ff}
+.opt input{width:20px;height:20px;flex-shrink:0;margin-top:3px;accent-color:#153ee5}
+.opt label{cursor:pointer;display:block}
+.progressbar{height:8px;background:#e2e9ff;border-radius:4px;overflow:hidden;margin:6px 0 22px}
+.progressbar>div{height:100%;background:#153ee5;width:0%;transition:width .2s}
+.rec{border:1px solid #dce5f1;border-left:4px solid #153ee5;background:#fff;border-radius:8px;padding:14px 16px;margin:12px 0}
+.rec h3{margin:0 0 6px}
+.scorebox{display:flex;align-items:center;gap:18px;background:#f1f5fc;border-radius:10px;padding:16px 20px;margin:18px 0}
+.scorebox strong{font-size:2.4rem;line-height:1}
+.optin{background:#f2f6fc;border-radius:10px;padding:18px 20px;margin:22px 0}
+.optin label.checkline{display:flex;align-items:flex-start;gap:10px;margin:12px 0;font-size:.95rem}
+.optin input{width:18px;height:18px;margin-top:3px;accent-color:#153ee5}
+.qmeta{font-size:.85rem;color:#52647d;margin:4px 0 14px}
+.legend{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+.legend span{font-size:.78rem;font-weight:700;letter-spacing:.06em;color:#52647d}
+.steps{display:flex;justify-content:space-between;align-items:center}
+@media(max-width:850px){.scorebox{flex-direction:column;align-items:flex-start;gap:6px}}
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html"><span class="mark">V</span> Vertical SaaS Lab</a>
+  <nav><a href="index.html">Übersicht</a><a href="checkliste.html">Checkliste</a><a href="umzug.html">Ablauf-Demo</a></nav>
+</header>
+<div class="notice">PROTOTYP · Private Konzeptphase · Ihre Antworten verlassen diese Seite nicht. Kein Versand, keine Speicherung.</div>
+
+<main>
+  <p class="eyebrow">KOSTENLOSER ANGEBOTS-CHECK · UMZUG &amp; ENTRÜMPELUNG</p>
+  <h1>Wo gehen bei Ihren Angeboten<br>Angaben verloren?</h1>
+  <p class="lede">10 kurze Fragen zu Ihrem Angebotsalltag. Sie erhalten sofort eine Einschätzung und drei konkrete Verbesserungen – zugeschnitten auf kleine Umzugs- und Räumungsbetriebe. Keine Anmeldung, keine Speicherung, kein Verkaufsgespräch.</p>
+  <div class="legend"><span>≈ 2 Minuten</span><span>Anonym</span><span>Ergebnis bleibt bei Ihnen</span></div>
+
+  <div class="workspace">
+    <div class="workspace-top">
+      <p><strong>Frage <span id="qnum">1</span> von 10</strong></p>
+      <p class="muted" id="topic">Anfragen</p>
+    </div>
+    <div style="padding:24px 26px">
+      <div class="progressbar"><div id="bar"></div></div>
+
+      <!-- Q1 -->
+      <section class="q-card active" data-q="1">
+        <h2>Wie kommen Ihre Anfragen heute meist an?</h2>
+        <div class="opt"><input type="radio" name="q1" id="q1a" value="1"><label for="q1a">Telefon – ich notiere beim Gespräch</label></div>
+        <div class="opt"><input type="radio" name="q1" id="q1b" value="2"><label for="q1b">E-Mail / WhatsApp mit Textlisten oder Fotos</label></div>
+        <div class="opt"><input type="radio" name="q1" id="q1c" value="3"><label for="q1c">Formular oder Portal-Umzugsauftrag</label></div>
+        <div class="opt"><input type="radio" name="q1" id="q1d" value="2"><label for="q1d">Starker Mix aus allem – je nach Kunde</label></div>
+      </section>
+
+      <!-- Q2 -->
+      <section class="q-card" data-q="2">
+        <h2>Was fehlt in der ersten Anfrage am häufigsten?</h2>
+        <div class="opt"><input type="radio" name="q2" id="q2a" value="2"><label for="q2a">Der tatsächliche Umfang (Zimmer, Zugänge, Sonderfälle)</label></div>
+        <div class="opt"><input type="radio" name="q2" id="q2b" value="2"><label for="q2b">Einsatzort / Adresse(n) im Detail</label></div>
+        <div class="opt"><input type="radio" name="q2" id="q2c" value="1"><label for="q2c">Der Terminwunsch</label></div>
+        <div class="opt"><input type="radio" name="q2" id="q2d" value="0"><label for="q2d">Eigentlich nichts – Anfragen sind vollständig</label></div>
+      </section>
+
+      <!-- Q3 -->
+      <section class="q-card" data-q="3">
+        <h2>Wie entsteht Ihr Angebot?</h2>
+        <div class="opt"><input type="radio" name="q3" id="q3a" value="2"><label for="q3a">Aus einer Vorlage (Word/Excel), die ich von Hand ausfülle</label></div>
+        <div class="opt"><input type="radio" name="q3" id="q3b" value="1"><label for="q3b">Aus dem Kopf, nach Gespräch/Besichtigung</label></div>
+        <div class="opt"><input type="radio" name="q3" id="q3c" value="1"><label for="q3c">Mit Software (Umzugs-/Kalkulationsprogramm)</label></div>
+        <div class="opt"><input type="radio" name="q3" id="q3d" value="0"><label for="q3d">Mit Software plus persönlicher Prüfung – funktioniert gut</label></div>
+      </section>
+
+      <!-- Q4 -->
+      <section class="q-card" data-q="4">
+        <h2>Wie oft müssen Sie nachfassen, bis alle Angaben für ein Angebot da sind?</h2>
+        <div class="opt"><input type="radio" name="q4" id="q4a" value="0"><label for="q4a">Fast nie</label></div>
+        <div class="opt"><input type="radio" name="q4" id="q4b" value="1"><label for="q4b">1–2 Rückfragen pro Auftrag</label></div>
+        <div class="opt"><input type="radio" name="q4" id="q4c" value="2"><label for="q4c">3 oder mehr Rückfragen – das kostet Zeit</label></div>
+      </section>
+
+      <!-- Q5 -->
+      <section class="q-card" data-q="5">
+        <h2>Was ändert sich nach der Angebotserstellung häufig?</h2>
+        <div class="opt"><input type="radio" name="q5" id="q5a" value="2"><label for="q5a">Umfang oder Zugänge weichen vom Besichtigungsbild ab</label></div>
+        <div class="opt"><input type="radio" name="q5" id="q5b" value="1"><label for="q5b">Termine verschieben sich</label></div>
+        <div class="opt"><input type="radio" name="q5" id="q5c" value="1"><label for="q5c">Zusatzwünsche kommen dazu (Packen, Lagerung, Entrümpelung)</label></div>
+        <div class="opt"><input type="radio" name="q5" id="q5d" value="0"><label for="q5d">Selten bis nie – der erste Stand hält</label></div>
+      </section>
+
+      <!-- Q6 -->
+      <section class="q-card" data-q="6">
+        <h2>Wo wird der endgültige Stand des Auftrags festgehalten?</h2>
+        <div class="opt"><input type="radio" name="q6" id="q6a" value="2"><label for="q6a">Verteilt: E-Mail-Verlauf, Notizen, Telefon, Werkstatt-Tafel</label></div>
+        <div class="opt"><input type="radio" name="q6" id="q6b" value="1"><label for="q6b">In der Angebotsdatei, die ich mühsam aktuell halte</label></div>
+        <div class="opt"><input type="radio" name="q6" id="q6c" value="1"><label for="q6c">Bei der Person, die den Auftrag betreut</label></div>
+        <div class="opt"><input type="radio" name="q6" id="q6d" value="0"><label for="q6d">An einem festen, immer gleichen Ort</label></div>
+      </section>
+
+      <!-- Q7 -->
+      <section class="q-card" data-q="7">
+        <h2>Wer erstellt die Angebote?</h2>
+        <div class="opt"><input type="radio" name="q7" id="q7a" value="2"><label for="q7a">Ich selbst – meist abends oder am Wochenende</label></div>
+        <div class="opt"><input type="radio" name="q7" id="q7b" value="1"><label for="q7b">Büro / Disposition</label></div>
+        <div class="opt"><input type="radio" name="q7" id="q7c" value="0"><label for="q7c">Feste zuständige Person mit klarer Zeit dafür</label></div>
+      </section>
+
+      <!-- Q8 -->
+      <section class="q-card" data-q="8">
+        <h2>Wie viele qualifizierte Anfragen erreichen Sie pro Monat?</h2>
+        <p class="qmeta">Gemeint: konkrete Aufträge in Ihrem Gebiet, für die ein Angebot oder eine Besichtigung sinnvoll ist.</p>
+        <div class="opt"><input type="radio" name="q8" id="q8a" value="0"><label for="q8a">Unter 20</label></div>
+        <div class="opt"><input type="radio" name="q8" id="q8b" value="1"><label for="q8b">20–40</label></div>
+        <div class="opt"><input type="radio" name="q8" id="q8c" value="2"><label for="q8c">Über 40</label></div>
+      </section>
+
+      <!-- Q9 -->
+      <section class="q-card" data-q="9">
+        <h2>Welche Werkzeuge nutzen Sie heute für Anfragen und Angebote?</h2>
+        <div class="opt"><input type="radio" name="q9" id="q9a" value="0"><label for="q9a">Spezialsoftware</label></div>
+        <div class="opt"><input type="radio" name="q9" id="q9b" value="1"><label for="q9b">E-Mail, WhatsApp, Excel/Word</label></div>
+        <div class="opt"><input type="radio" name="q9" id="q9c" value="2"><label for="q9c">Vor allem Papier und Telefonnotizen</label></div>
+      </section>
+
+      <!-- Q10 -->
+      <section class="q-card" data-q="10">
+        <h2>Was ärgert Sie an Ihrer heutigen Angebotsbearbeitung am meisten?</h2>
+        <div class="opt"><input type="radio" name="q10" id="q10a" value="2"><label for="q10a">Zeit – ich sitze abends an Angeboten statt im Betrieb</label></div>
+        <div class="opt"><input type="radio" name="q10" id="q10b" value="2"><label for="q10b">Fehlende Angaben führen zu Diskussionen auf der Baustelle</label></div>
+        <div class="opt"><input type="radio" name="q10" id="q10c" value="1"><label for="q10c">Ich kann schlecht nachvollziehen, wo ein Auftrag gerade steht</label></div>
+        <div class="opt"><input type="radio" name="q10" id="q10d" value="0"><label for="q10d">Nichts Größeres – läuft, wie es ist</label></div>
+      </section>
+
+      <!-- Result -->
+      <section class="q-card" id="result">
+        <h2>Ihre Einschätzung</h2>
+        <div class="scorebox"><strong id="score">–</strong><p id="scoretext" style="margin:0"></p></div>
+        <div id="recs"></div>
+        <div class="optin">
+          <h3>Ergebnis + 8-Punkte-Checkliste per E-Mail?</h3>
+          <p class="muted">Wir schicken Ihnen Ihr Ergebnis und die 8-Punkte-Checkliste für vollständige Anfragen per E-Mail. Wir nutzen Ihre Adresse nur für diese eine Antwort – kein Newsletter, kein Anruf, keine Weitergabe.</p>
+          <label class="checkline"><input type="checkbox" id="consent"><span>Ja, bitte senden Sie mir das Ergebnis per E-Mail. (Freiwillige, ausdrückliche Einwilligung – jederzeit widerrufbar.)</span></label>
+          <div class="actions">
+            <button class="button" id="mailbtn" disabled>Ergebnis anfordern</button>
+            <button class="secondary button" id="copybtn">Ergebnis kopieren</button>
+          </div>
+          <p class="muted" id="mailhint" style="margin-top:10px">Das öffnet Ihr E-Mail-Programm mit einer vorbereiteten Anfrage. Die E-Mail senden Sie selbst – so bleibt die Kontrolle komplett bei Ihnen.</p>
+          <p class="muted" id="copyhint" hidden>Ergebnis in die Zwischenablage kopiert – Sie können es selbst in eine E-Mail einfügen und senden.</p>
+          <p class="muted" style="margin-top:12px">Nicht warten? <a href="checkliste.html">8-Punkte-Checkliste direkt öffnen und ausdrucken →</a></p>
+        </div>
+        <p class="muted">Hinweis: Dies ist eine private Konzeptprüfung eines möglichen Werkzeugs, keine Geschäftsbeziehung. Die Auswertung ist eine Selbsteinschätzung auf Basis Ihrer Angaben, keine Beratung.</p>
+        <div class="actions" style="margin-top:18px">
+          <button class="button secondary" id="restart">Check neu starten</button>
+          <a class="button" href="umzug.html">Ablauf-Demo ansehen →</a>
+        </div>
+      </section>
+
+      <div class="actions" style="margin-top:22px" id="navbtns">
+        <button class="secondary button" id="back" disabled>Zurück</button>
+        <button class="button" id="next" disabled>Weiter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq">
+    <details><summary>Was passiert mit meinen Antworten?</summary><p>Nichts. Diese Seite speichert und übermittelt nichts. Die Auswertung berechnet Ihr Ergebnis allein im Browser. Nur wenn Sie selbst danach aktiv Ihre E-Mail senden, erreichen uns Angaben.</p></details>
+    <details><summary>Warum 10 Fragen?</summary><p>Sie entsprechen den Punkten, die in der Praxis die meisten Rückfragen, Baustellen-Diskussionen und Abendbüros verursachen: Anfragenweg, Vollständigkeit, Nachfassen, spätere Änderungen, Festhalten des Endstands.</p></details>
+    <details><summary>Ist das ein Verkaufsversuch?</summary><p>Der Check ist zuerst eine Selbstprüfung. Wenn am Ende Interesse an einem begrenzten Praxis-Test besteht, entscheiden Sie das selbst – es gibt keine automatischen Folgenachrichten.</p></details>
+  </div>
+</main>
+
+<footer>Private Konzeptprüfung · Arbeitsname, keine finale Marke · Keine echten Kundendaten eingeben. <a href="index.html">Zur Übersicht</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></footer>
+
+<script>
+(function(){
+  var TOTAL=10, cur=1, answers={}, lastResult={pct:0,level:'gering'}, TOPICS={1:"Anfragen",2:"Vollständigkeit",3:"Angebote",4:"Nachfassen",5:"Änderungen",6:"Festhalten",7:"Verantwortlich",8:"Volumen",9:"Werkzeuge",10:"Ärgernis"};
+  var cards=document.querySelectorAll('.q-card'), bar=document.getElementById('bar'),
+      qnum=document.getElementById('qnum'), topic=document.getElementById('topic'),
+      next=document.getElementById('next'), back=document.getElementById('back'),
+      nav=document.getElementById('navbtns');
+  function show(n){cur=n;cards.forEach(function(c){c.classList.toggle('active', +c.dataset.q===n|| (c.id==='result'&&n===11))});
+    qnum.textContent=Math.min(n,10); topic.textContent=n>10?"Ergebnis":TOPICS[n];
+    bar.style.width=(Math.min(n-1,TOTAL)/TOTAL*100)+'%';
+    var isRes=n===11; nav.hidden=isRes; back.disabled=(n===1);
+    var g=document.querySelector('input[name="q'+n+'"]:checked'); next.disabled=!g;
+    next.textContent=n===TOTAL?"Auswertung anzeigen":"Weiter";
+    if(isRes)render();
+  }
+  document.addEventListener('change',function(e){ if(e.target.name&&e.target.name.indexOf('q')===0){answers[e.target.name]=+e.target.value; next.disabled=false;}});
+  next.addEventListener('click',function(){ if(cur<TOTAL)show(cur+1); else show(11); });
+  back.addEventListener('click',function(){ if(cur>1)show(cur-1); });
+  document.getElementById('restart').addEventListener('click',function(){ location.reload(); });
+
+  function render(){
+    var v=function(k){return answers[k]!==undefined?answers[k]:0};
+    var score=0; for(var i=1;i<=10;i++)score+=v('q'+i);
+    var pct=Math.round(score/20*100);
+    var el=document.getElementById('score'); el.textContent=pct+'/100';
+    var txt=document.getElementById('scoretext');
+    var level;
+    if(pct>=60){txt.textContent='Hoher Klärungsbedarf: Ihre Angaben zeigen mehrere typische Verlustpunkte. Genau hier entstehen Rückfragen, Baustellen-Diskussionen und Abendbüros.';level='hoch'}
+    else if(pct>=30){txt.textContent='Mittlerer Klärungsbedarf: Einige Abläufe funktionieren, an bestimmten Stellen gehen Angaben oder Zeit verloren.';level='mittel'}
+    else{txt.textContent='Geringer Klärungsbedarf: Ihre Angebotsbearbeitung ist bereits strukturiert. Die folgenden Punkte können Sie stabil halten.';level='gering'}
+    var recs=document.getElementById('recs'); recs.innerHTML='';
+    function rec(t,d){var div=document.createElement('div');div.className='rec';var h=document.createElement('h3');h.textContent=t;var p=document.createElement('p');p.textContent=d;div.appendChild(h);div.appendChild(p);recs.appendChild(div);return div}
+    if(v('q5')>0){rec('Änderungen sichtbar machen','Notieren Sie bei jedem Auftrag nach der Angebotserstellung eine feste Zeile „Stand: Datum – was neu ist“. Schon dieses eine Feld verhindert die häufigsten Diskussionen, weil jeder auf demselben Stand arbeitet.')}
+    if(v('q6')>=1){rec('Einen festen Endstand pro Auftrag','Der endgültige Stand gehört an einen immer gleichen Ort – nicht in den E-Mail-Verlauf. Ein einfaches Blatt pro Auftrag mit „Letzter Stand am …“ reicht für den Anfang völlig aus.')}
+    if(v('q4')>=1){rec('Einmal nachfragen statt dreimal','Prüfen Sie Anfragen direkt beim ersten Kontakt gegen eine kurze feste Liste: Umfang, Zugänge, Einsatzadresse, Terminwunsch. Eine strukturierte Erstfrage spart typischerweise zwei Rückfragen pro Auftrag.')}
+    if(v('q7')===2&&v('q8')>=1){rec('Angebote aus dem Abendbüro holen','Bei 20+ Anfragen pro Monat und abendlicher Angebotserstellung lohnt es sich, den ersten Entwurf vor dem Abend anzustoßen (Vorlage mit vorbefüllten Stammdaten) – der Feinschliff bleibt bei Ihnen, das Blatt ist nie leer.')}
+    if(v('q10')===2){rec('Diskussionen auf der Baustelle vermeiden','Weicht der tatsächliche Umfang vom Angebot ab, zählen Sie die Abweichung sofort mit Datum auf dem Auftrag fest. Das schützt Ihren Preis und die Beziehung – Diskussionen entstehen fast immer aus mündlichen Abweichungen.')}
+    if(level==='gering'&&!recs.childNodes.length){rec('Ihr Ablauf ist stabil','Halten Sie das fest: dokumentieren Sie einmal, wie Ihre aktuelle Vorlage und Ihr Ablauf heute funktionieren. Das ist wertvoll – und jede künftige Entscheidung lässt sich daran messen.')}
+    var opt=rec('Nächster Schritt: 30-Tage-Praxistest','Wenn Sie möchten, prüfen wir gemeinsam in einem begrenzten Test (bis zu 10 Angebotsfälle, 149 € netto, keine automatische Verlängerung), ob sich Ihr Büroaufwand messbar reduzieren lässt. Der Test ist eine eigene Entscheidung – dieser Check verpflichtet Sie zu nichts.');
+    opt.style.borderLeftColor='#e29600';
+    lastResult={pct:pct,level:level};
+  }
+
+  function summaryText(){
+    var pct=lastResult.pct, level=lastResult.level;
+    var lines=['Angebots-Check – Ergebnis: '+pct+'/100 ('+level+'er Klärungsbedarf)',''];
+    for(var i=1;i<=10;i++){lines.push('Frage '+i+': '+(answers['q'+i]!==undefined?answers['q'+i]:'—'))}
+    lines.push('','Bitte senden Sie mir mein Ergebnis und die 8-Punkte-Checkliste.','(Freiwillige Einwilligung, jederzeit widerrufbar. Kein Newsletter.)');
+    return lines.join('\n');
+  }
+  var mailbtn=document.getElementById('mailbtn'), consent=document.getElementById('consent');
+  consent.addEventListener('change',function(){mailbtn.disabled=!consent.checked});
+  mailbtn.addEventListener('click',function(){
+    var s=summaryText();
+    location.href='mailto:hussamabbar5@gmail.com?subject='+encodeURIComponent('Angebots-Check: Ergebnis anfordern')+'&body='+encodeURIComponent(s);
+  });
+  document.getElementById('copybtn').addEventListener('click',function(){
+    var s=summaryText();
+    if(navigator.clipboard){navigator.clipboard.writeText(s).then(function(){document.getElementById('copyhint').hidden=false;});}
+  });
+  show(1);
+})();
+</script>
+</body></html>

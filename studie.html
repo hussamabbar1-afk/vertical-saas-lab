@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="de"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Schriftliche Studie zur Angebotspraxis in kleinen Umzugs- und Räumungsbetrieben — 5 offene Fragen, ca. 20–30 Minuten, vertraulich.">
+<title>Studie: Angebotspraxis in kleinen Umzugs- und Räumungsbetrieben</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<style>
+.q-block{margin:22px 0}
+.q-block label{display:block;font-weight:650;margin-bottom:8px}
+.q-block textarea{width:100%;min-height:110px;font:inherit;padding:12px;border:1px solid #b8c7dd;border-radius:7px;box-sizing:border-box}
+.q-block .hint{font-size:.85rem;color:#586a81;margin-top:4px}
+.screen{display:flex;align-items:flex-start;gap:10px;margin:10px 0;padding:12px;background:#f6f8fd;border-radius:7px}
+.screen input{width:20px;height:20px;flex-shrink:0;margin-top:3px;accent-color:#153ee5}
+.done{background:#e8f5ef;color:#17593b;padding:14px 18px;border-radius:7px;margin-top:16px}
+.warn{background:#fff4d8;color:#6e4900;padding:12px 16px;border-radius:7px;font-size:.9rem}
+.done .sc-code{display:inline-block;background:#fff;border:1px solid #17593b;border-radius:6px;padding:2px 10px;font-size:1.05rem;letter-spacing:.06em;margin-left:6px}
+.notice-bar{background:#102343;color:#e6edff;padding:10px 20px;text-align:center;font-size:.85rem}
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html"><span class="mark">V</span> Vertical SaaS Lab</a>
+  <nav><a href="index.html">Übersicht</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
+</header>
+<div class="notice-bar">Schriftliche Studie · ca. 20–30 Minuten · Vertraulich · Teilnahme freiwillig, jederzeit beendbar</div>
+
+<main style="max-width:820px;margin:auto">
+  <p class="eyebrow">MARKTFORSCHUNG · KOMMERZIELLES PROJEKT</p>
+  <h1>Wie entsteht Ihr Angebot wirklich?</h1>
+  <p class="lede">Wir untersuchen, wie kleine Umzugs- und Entrümpelungsbetriebe (2–20 Mitarbeitende) ihre Angebote erstellen: Wie kommen Angaben hinein, was ändert sich danach, wo wird der Endstand festgehalten? Fünf offene Fragen, rein schriftlich — Sie antworten, wann es passt. <em>PS: Nutzer von SurveyCircle.com erhalten für ihre Teilnahme Punkte, mit denen sie kostenlos Studienteilnehmer rekrutieren.</em></p>
+
+  <div class="info">
+    <p><strong>Wer führt die Studie durch?</strong> Mohamad Hosam Alabar (Verantwortlicher, <a href="impressum.html">Impressum</a>). Es handelt sich um ein <strong>kommerzielles Marktforschungsprojekt</strong> für ein mögliches Softwarewerkzeug für diese Branche — der Zweck wird offen genannt, es gibt kein verstecktes Interesse.</p>
+    <p><strong>Was passiert mit Ihren Antworten?</strong> Ihre Antworten werden ausschließlich in Ihrem Browser zusammengestellt und von Ihnen selbst per E-Mail an <a href="mailto:hussamabbar5@gmail.com">hussamabbar5@gmail.com</a> gesendet. Wir nutzen sie nur anonymisiert und aggregiert für die Auswertung — kein Newsletter, kein Anruf, keine Weitergabe; bitte keine Namen oder Firmendaten angeben. Details: <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+  </div>
+
+  <div class="workspace">
+    <div class="workspace-top"><p><strong>Schritt 1 · Zielgruppen-Check</strong></p><p class="muted">3 kurze Fragen</p></div>
+    <div style="padding:22px 26px">
+      <p>Die Studie richtet sich ausschließlich an diese Zielgruppe (Regel bei SurveyCircle: Bitte nehmen Sie nur teil, wenn Sie dazugehören):</p>
+      <label class="screen"><input type="checkbox" id="s1"><span>Sie arbeiten aktuell in einem deutschen Umzugs- und/oder Räumungsbetrieb mit etwa 2 bis 20 Mitarbeitenden.</span></label>
+      <label class="screen"><input type="checkbox" id="s2"><span>Sie erstellen Angebote selbst oder verantworten/leiten die Angebotserstellung.</span></label>
+      <label class="screen"><input type="checkbox" id="s3"><span>Sie waren in dieser Rolle in den letzten 12 Monaten tätig.</span></label>
+      <div id="screen-msg" class="warn" hidden>Sie gehören aktuell nicht zur Zielgruppe dieser Studie. Wir bitten dann, nicht an der Studie teilzunehmen — so bleibt die Auswertung ehrlich. Vielen Dank für Ihr Verständnis.</div>
+    </div>
+  </div>
+
+  <div class="workspace" id="study-part" hidden>
+    <div class="workspace-top"><p><strong>Schritt 2 · Die fünf Fragen</strong></p><p class="muted">Stichwort-Zeilen genügen</p></div>
+    <div style="padding:22px 26px">
+      <p class="muted">Denken Sie an den <strong>zuletzt abgeschlossenen Auftrag</strong>. Auch wenn alles reibungslos lief, hilft mir Ihre Beschreibung. Vertrauliche Details können Sie überspringen.</p>
+
+      <div class="q-block"><label for="q1">1. Wie kamen die Angaben in das Angebot?</label><textarea id="q1" placeholder="z. B. Telefonnotiz, WhatsApp-Fotos, Besichtigung, Portal-Formular …"></textarea><p class="hint">Weg der Anfrage, Werkzeuge, wer notiert.</p></div>
+
+      <div class="q-block"><label for="q2">2. Was änderte sich danach gegenüber dem ersten Stand?</label><textarea id="q2" placeholder="z. B. Umfang, Termine, Zusatzwünsche, Zugänge …"></textarea></div>
+
+      <div class="q-block"><label for="q3">3. Wie wurde der endgültige Stand festgehalten — wo und von wem?</label><textarea id="q3" placeholder="z. B. E-Mail-Verlauf, Notizbuch, Werkstatt-Tafel, im Kopf …"></textarea></div>
+
+      <div class="q-block"><label for="q4">4. Wie oft mussten Sie nachfassen, bis alle Angaben da waren? Was fehlte typischerweise?</label><textarea id="q4" placeholder="z. B. zwei Rückfragen; gefehlt: Etage, Aufzug, genaue Adresse …"></textarea></div>
+
+      <div class="q-block"><label for="q5">5. Was kostet Sie die Angebotserstellung heute am meisten Zeit — und was würde sich ändern, wenn sie wegfiele?</label><textarea id="q5"></textarea></div>
+
+      <div class="q-block"><label for="q6">Optional: Was möchte ich noch loswerden?</label><textarea id="q6" style="min-height:70px"></textarea></div>
+
+      <label class="check" style="margin-top:18px"><input type="checkbox" id="consent"><span>Ich bin damit einverstanden, dass meine Antworten anonymisiert und aggregiert zur Auswertung verwendet werden. (Freiwillig, jederzeit widerrufbar — Widerruf an die Kontaktadresse genügt.)</span></label>
+
+      <div class="actions">
+        <button class="button" id="sendbtn" disabled>Antworten per E-Mail senden</button>
+        <button class="secondary button" id="copybtn" disabled>Antworten kopieren</button>
+      </div>
+      <p class="muted" style="margin-top:10px">Das öffnet Ihr E-Mail-Programm mit einer vorbereiteten Antwort an hussamabbar5@gmail.com. Sie senden selbst — nichts verlässt diese Seite ohne Ihre Aktion. Keine Namen, keine Firmandaten, keine Kundendaten eintragen.</p>
+      <p class="muted" id="copyhint" hidden>Antworten in die Zwischenablage kopiert — bitte selbst an hussamabbar5@gmail.com senden.</p>
+      <div id="done-box" class="done" hidden><strong>Danke!</strong> Falls Sie über SurveyCircle kommen: Lösen Sie den folgenden Survey Code unter <a href="https://www.surveycircle.com" rel="noopener">www.surveycircle.com</a> ein und erhalten Sie Ihre Punkte — erst <strong>nach dem Absenden</strong> Ihrer Antworten (Regel #4): <strong class="sc-code">HKZK-V5P7-955U-TLBL</strong><br>Ein-Klick-Einlösung: <a href="https://www.surveycircle.com/HKZK-V5P7-955U-TLBL/" rel="noopener">Survey Code mit einem Klick einlösen</a><br><br>Ihre Antworten werden anonymisiert ausgewertet; eine persönliche Antwort erhalten Sie nicht, damit Ihre Anonymität gewahrt bleibt.</div>
+    </div>
+  </div>
+
+  <div class="faq">
+    <details><summary>Warum läuft die Studie per E-Mail?</summary><p>Weil so keine Umfrageplattform Ihre Angaben speichern muss: Die Antworten entstehen bei Ihnen und werden von Ihnen selbst gesendet. Wir erhalten nur das, was Sie ausdrücklich abschicken.</p></details>
+    <details><summary>Ist das ein verdecktes Verkaufsgespräch?</summary><p>Nein. Es gibt in dieser Studie kein Angebot, keinen Preis und keine Nachfass-Nachricht. Die Studie dient der Marktforschung; der kommerzielle Zweck ist oben offen genannt.</p></details>
+    <details><summary>Wie bleibe ich anonym?</summary><p>Tragen Sie keine Namen — weder Ihren noch den von Kunden oder Mitarbeitenden. Ausgewertet wird nur anonymisiert und aggregiert. Ihre E-Mail-Adresse sehen wir nur, weil Ihre Mail sie technisch mitliefert; sie wird nach der Auswertung gelöscht und nicht mit Antworten verknüpft gespeichert.</p></details>
+  </div>
+</main>
+
+<footer>Studie von Mohamad Hosam Alabar · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · <a href="index.html">Zur Übersicht</a></footer>
+
+<script>
+(function(){
+  var screens=['s1','s2','s3'],consent=document.getElementById('consent'),
+      send=document.getElementById('sendbtn'),copy=document.getElementById('copybtn'),
+      part=document.getElementById('study-part'),msg=document.getElementById('screen-msg'),
+      done=document.getElementById('done-box');
+  function allChecked(){return screens.every(function(id){return document.getElementById(id).checked})}
+  function refresh(){
+    var ok=allChecked();
+    msg.hidden=ok;
+    part.hidden=!ok;
+    send.disabled=copy.disabled=!(ok&&consent.checked);
+  }
+  screens.forEach(function(id){document.getElementById(id).addEventListener('change',refresh)});
+  consent.addEventListener('change',refresh);
+  function answers(){
+    var out=['Studie: Angebotspraxis kleine Umzugs-/Räumungsbetriebe','Zielgruppen-Check: alle 3 Punkte bestätigt',''];
+    for(var i=1;i<=6;i++){var v=document.getElementById('q'+i).value.trim();out.push('Frage '+i+':',' '+(v||'(keine Angabe)'),'')}
+    out.push('(Gesendet über die Studieseite; anonymisiert auszuwerten.)');
+    return out.join('\n');
+  }
+  send.addEventListener('click',function(){
+    location.href='mailto:hussamabbar5@gmail.com?subject='+encodeURIComponent('Studienteilnahme: Angebotspraxis')+'&body='+encodeURIComponent(answers());
+    done.hidden=false;
+  });
+  copy.addEventListener('click',function(){
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(answers()).then(function(){document.getElementById('copyhint').hidden=false;done.hidden=false;}).catch(function(){copyFallback();});}else{copyFallback();}
+  });
+  function copyFallback(){
+    var ta=document.createElement('textarea');ta.value=answers();ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();
+    var ok=false;try{ok=document.execCommand('copy')}catch(e){}
+    document.body.removeChild(ta);
+    var hint=document.getElementById('copyhint');
+    hint.textContent=ok?'Antworten in die Zwischenablage kopiert — bitte selbst an hussamabbar5@gmail.com senden.':'Kopieren nicht möglich — bitte die Antworten manuell in eine E-Mail an hussamabbar5@gmail.com übernehmen (Felder sind oben sichtbar).';
+    hint.hidden=false;done.hidden=false;
+  }
+  refresh();
+})();
+</script>
+</body></html>
